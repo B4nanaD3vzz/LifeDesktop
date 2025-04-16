@@ -3,7 +3,7 @@
 ---
 
 ```markdown
-# 🎯 PulseMonitor — Sistema de Monitoramento Avançado (Overlay + Logs)
+# 🎯 LifeDesktop — Sistema de Monitoramento Avançado (Overlay + Logs)
 
 > Monitoramento em tempo real de **CPU, GPU, RAM, Rede**, temperatura e muito mais — com overlay transparente, logging em CSV e análise de métricas.
 
