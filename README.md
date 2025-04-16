@@ -61,7 +61,7 @@ O sistema inclui:
 ## 📁 Estrutura de Arquivos
 
 ```
-PulseMonitor/
+LifeDesktop/
 ├── main.py               # Inicia a aplicação e gera métricas finais
 ├── monitor.py            # Coleta e grava dados em tempo real
 ├── overlay.py            # Interface HUD sobreposta com informações ao vivo
