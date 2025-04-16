@@ -5,7 +5,7 @@
 ```markdown
 # 🎯 PulseMonitor — Sistema de Monitoramento Avançado (Overlay + Logs)
 
-> Monitoramento em tempo real de **CPU, GPU, RAM, Rede, FPS**, temperatura e muito mais — com overlay transparente, logging em CSV e análise de métricas.
+> Monitoramento em tempo real de **CPU, GPU, RAM, Rede**, temperatura e muito mais — com overlay transparente, logging em CSV e análise de métricas.
 
 ---
 
