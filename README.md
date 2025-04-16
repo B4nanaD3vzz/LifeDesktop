@@ -11,7 +11,7 @@
 
 ## 🧩 Sobre o Projeto
 
-O **PulseMonitor** é uma aplicação desenvolvida em Python com uma interface leve e sobreposta (`overlay`) que coleta dados em tempo real do sistema e jogos. Ideal para análise de desempenho, amostragem técnica, testes de stress ou uso pessoal.
+O **Life Desktop** é uma aplicação desenvolvida em Python com uma interface leve e sobreposta (`overlay`) que coleta dados em tempo real do sistema e jogos. Ideal para análise de desempenho, amostragem técnica, testes de stress ou uso pessoal.
 
 O sistema inclui:
 
@@ -19,7 +19,6 @@ O sistema inclui:
 - Gravação de logs em `.csv`
 - Interface gráfica com `customtkinter`
 - Overlay transparente que permanece acima de todas as janelas
-- Detecção e exibição de **FPS em jogos**, via integração com **RTSS**
 - Geração de métricas de uso ao final da sessão
 
 ---
@@ -32,8 +31,7 @@ O sistema inclui:
 | **RAM**             | Uso (%), usada e livre em MB                              |
 | **GPU (NVIDIA)**    | Uso (%) e temperatura                                     |
 | **Internet**        | Upload e download em KB/s                                 |
-| **FPS (em jogos)**  | Capturado em tempo real via RTSS (RivaTuner Statistics)   |
-| **Processo ativo**  | Detecta se um jogo ou app está rodando                    |
+
 
 ---
 
@@ -44,8 +42,6 @@ O sistema inclui:
 | `psutil`             | Coleta dados de CPU, RAM, disco e rede            |
 | `GPUtil`             | Coleta dados da GPU (NVIDIA)                      |
 | `customtkinter`      | Interface gráfica moderna e personalizável        |
-| `pywin32`            | Integração com a janela ativa e processos (Windows) |
-| `ctypes`             | Acesso à memória compartilhada do RTSS (FPS)      |
 | `tkinter`            | Base para a GUI e overlay                         |
 | `pandas`             | Geração de métricas com base nos logs             |
 | `datetime` / `os`    | Manipulação de arquivos, diretórios e tempo       |
@@ -58,7 +54,7 @@ O sistema inclui:
 - Transparente com borda verde fina
 - Texto em **verde limão** sobre fundo escuro (estilo HUD)
 - Pode ser arrastada pela tela
-- Exibe: CPU, RAM, GPU, Net, FPS (quando jogo ativo)
+- Exibe: CPU, RAM, GPU, Net.
 
 ---
 
@@ -81,8 +77,8 @@ PulseMonitor/
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/PulseMonitor.git
-cd PulseMonitor
+git clone https://github.com/B4nanaD3vzz/LifeDesktop.git
+cd LifeDesktop
 ```
 
 2. Instale as dependências:
@@ -120,17 +116,11 @@ CPU médio: 27.4%
 RAM média: 58.3%
 Upload médio: 32.1 KB/s
 Download médio: 220.4 KB/s
-FPS médio: 62.0
 ...
 ```
 
 ---
 
-## 📸 Screenshots (opcional)
-
-> _(Insira aqui imagens ou gifs mostrando a HUD em ação, um log CSV, gráficos, etc.)_
-
----
 
 ## 🤝 Contribuições
 
@@ -138,6 +128,7 @@ Sinta-se livre para abrir issues, enviar PRs ou sugerir melhorias!
 
 ### Ideias futuras:
 - Gráficos ao vivo com `matplotlib` ou `plotly`
+- Amostrador de FPS
 - Geração automática de relatórios em PDF
 - Suporte a múltiplas GPUs
 - Notificações de temperatura crítica
@@ -146,7 +137,7 @@ Sinta-se livre para abrir issues, enviar PRs ou sugerir melhorias!
 
 ## 🧠 Autor
 
-Desenvolvido por **[Seu Nome ou Nick]**  
+Desenvolvido por **[B4nanaD3vzz]**  
 Se curtir, ⭐ no repo é sempre bem-vindo!
 
 ---
@@ -155,10 +146,3 @@ Se curtir, ⭐ no repo é sempre bem-vindo!
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 ```
-
----
-
-## 💡 Quer que eu gere o `requirements.txt` também?
-
-Ou posso montar o template pronto do repositório, se quiser subir pro GitHub rapidinho.  
-Me avisa se quer que eu inclua gráficos, dark mode pro overlay, splash screen com o nome, ou alguma identidade visual 😎
