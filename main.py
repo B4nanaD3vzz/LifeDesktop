@@ -4,23 +4,6 @@ from monitor import iniciar_monitoramento, log_file
 import pandas as pd
 from overlay import Overlay
 
-
-"""
-global overlay
-    if not executando["executando"]:
-        executando["executando"] = True
-        resultado.configure(text="Monitoramento em execução...")
-        thread_monitor = threading.Thread(target=iniciar_monitoramento, args=(executando,))
-        thread_monitor.start()
-        overlay = Overlay(app)  # Inicia HUD flutuante
-
-def parar():
-    if executando["executando"]:
-        executando["executando"] = False
-        resultado.configure(text="Monitoramento finalizado.")
-        gerar_metricas()
-"""
-
 # Flag de controle
 executando = {"executando": False}
 thread_monitor = None
